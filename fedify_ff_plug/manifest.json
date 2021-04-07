@@ -1,0 +1,32 @@
+{
+
+    "manifest_version": 2,
+    "name": "Fedify",
+    "version": "17.76",
+  
+    "description": "Adds glowing green background to all post from flagged Feds, ATF, or solvent trap salesmen.",
+  
+    "icons": {
+      "48": "icons/atf_guy_peeker.jpg"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://chat.deterrencedispensed.com/*"],
+        "js": ["fedify.js"]
+      }
+    ],
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "fedify@example.com"
+        }
+    },
+    "options_ui": {
+        "page": "options/options.html"
+    },
+    "permissions": [
+        "storage",
+        "activeTab",
+        "contextMenus"
+    ]
+  }
