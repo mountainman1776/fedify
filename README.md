@@ -1,5 +1,6 @@
 # fedify
 
+For the love of your dog, use the damn plug-in
 
 
 https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension
